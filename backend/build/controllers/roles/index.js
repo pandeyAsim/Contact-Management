@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.destroy = exports.get = exports.create = void 0;
+const tslib_1 = require("tslib");
+var createRole_controller_1 = require("./createRole.controller");
+Object.defineProperty(exports, "create", { enumerable: true, get: function () { return tslib_1.__importDefault(createRole_controller_1).default; } });
+var getRole_controller_1 = require("./getRole.controller");
+Object.defineProperty(exports, "get", { enumerable: true, get: function () { return tslib_1.__importDefault(getRole_controller_1).default; } });
+var deleteRole_controller_1 = require("./deleteRole.controller");
+Object.defineProperty(exports, "destroy", { enumerable: true, get: function () { return tslib_1.__importDefault(deleteRole_controller_1).default; } });

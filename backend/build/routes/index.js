@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const router = express_1.default.Router();
+const auth_routes_1 = tslib_1.__importDefault(require("./auth.routes"));
+const users_routes_1 = tslib_1.__importDefault(require("./users.routes"));
+const categories_routes_1 = tslib_1.__importDefault(require("./categories.routes"));
+const contacts_routes_1 = tslib_1.__importDefault(require("./contacts.routes"));
+const admin_routes_1 = tslib_1.__importDefault(require("./admin.routes"));
+router.use("/auth", auth_routes_1.default);
+router.use("/users", users_routes_1.default);
+router.use("/categories", categories_routes_1.default);
+router.use("/contacts", contacts_routes_1.default);
+router.use("/admin", admin_routes_1.default);
+exports.default = router;

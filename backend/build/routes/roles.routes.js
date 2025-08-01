@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const router = express_1.default.Router();
+const roles_1 = require("../controllers/roles");
+const roles_2 = require("../validators/roles");
+const validate_1 = tslib_1.__importDefault(require("../validators/validate"));
+router.post("/", roles_2.createRoleValidator, validate_1.default, roles_1.create);
+router.get("/", roles_1.get);
+router.delete("/:id", roles_1.destroy);
+exports.default = router;

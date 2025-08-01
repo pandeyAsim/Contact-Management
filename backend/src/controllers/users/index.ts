@@ -1,0 +1,10 @@
+export { default as register } from "./register.controller";
+export { default as login } from "./login.controller";
+export { default as logout } from "./logout.controller";
+export { default as refreshToken } from "./refreshToken.controller";
+export { default as verifyEmail } from "./verify.controller";
+export { default as getProfile } from "./getProfile.controller";
+export { default as updateProfile } from "./updateProfile.controller";
+export { default as updateProfileImage } from "./updateProfileImage.controller";
+export { default as forgotPassword } from "./forgotPassword.controller";
+export { default as resetPassword } from "./resetPassword.controller";

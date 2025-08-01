@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --color-light: #f4f7f9;
+  --color-dark: #202938;
+}
+
+@utility border-secondary {
+  @apply border-gray-300 dark:border-gray-200/25;
+}

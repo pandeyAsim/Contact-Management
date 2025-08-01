@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "baseUrl": ".",
+    "paths": {
+      "@/": ["src/"],
+      "@/*": ["src/*"]
+    },
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "noEmit": false,
+    "outDir": "./build",
+    "removeComments": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "*",
+    "src/app.ts",
+    "src/server.ts",
+    "src/**/*.ts",
+    "src/**/*.json",
+    "__tests__/**/*.ts",
+    ".env"
+  ],
+  "exclude": ["node_modules", "./build", "src/http", "src/logs"]
+}
